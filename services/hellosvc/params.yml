@@ -1,0 +1,2 @@
+/* this is where the service will attach */
+base_uri: "scratch.ns/hello"
