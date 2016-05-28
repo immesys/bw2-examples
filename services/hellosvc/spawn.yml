@@ -1,0 +1,11 @@
+gamma:
+  demosvc:
+    entity: hellosvc.ent
+    container: immesys/spawnpoint:amd64
+    source: git+http://github.com/immesys/bw2-examples
+    build: [go get github.com/immesys/bw2-examples/services/hellosvc]
+    run: [hellosvc]
+    params:
+      base_uri: scratch.ns/hello
+    memAlloc: 512M
+    cpuShares: 1024
